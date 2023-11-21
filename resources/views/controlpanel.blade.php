@@ -13,7 +13,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-
+    <!-- Route::get('/example', 'ExampleController@example'); -->
    
     <link href="style.css" rel="stylesheet">
 
@@ -136,18 +136,23 @@
                 </tr>
             </thead>
             <tbody>
-
-                @for($i = 0; $i < 3; $i++) <tr>
-                    <td>Tiger Nixon</td>
-                    <td>2011/04/25</td>
-                    <td>
-                        <dg style="color: #FFC300;">[$]</dg> 320,800
-                    </td>
+            @for($i = 0; $i < 13; $i++)
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>2011/04/25</td>
+                        <td>
+                            <span style="color: #FFC300;">[$]</span> 320,800
+                        </td>
                     </tr>
-                    @endfor
+                @endfor
+
+            @for ($i = 0; $i < 10; $i++)
+                {{ $i }} <br>
+            @endfor
 
 
-            </tbody>
+
+    </tbody>
         </table>
 
     </div>

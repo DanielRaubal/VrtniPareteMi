@@ -76,6 +76,21 @@
 
 
         </div>
+        
+
+        <?php
+
+// Include the external.php file
+require_once 'external.php';
+
+// Create an instance of the ExternalClass
+$externalObject = new ExternalClass();
+
+// Call the externalMethod
+$externalObject->externalMethod();
+
+?>
+
 
 
         <div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
